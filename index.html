@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Agents Handbook: Practical Patterns for LLM-Based Agent Systems</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="font-bold text-slate-800 tracking-tight text-lg">Designing Agents Handbook</span>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#toc" class="hover:text-blue-600 transition">Table of Contents</a>
+                <a href="#author" class="hover:text-blue-600 transition">About the Author</a>
+            </nav>
+            <a href="https://www.amazon.com/dp/B0H5S3TN8N/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-sm transition">
+                Buy Now
+            </a>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-28 bg-gradient-to-b from-slate-100 to-slate-50 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mb-6">
+                🎉 Newly Published Handbook
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
+                Designing Agents Handbook
+            </h1>
+            <p class="text-xl md:text-2xl font-semibold text-slate-600 mb-8 max-w-3xl mx-auto">
+                Practical Patterns for LLM-Based Agent Systems
+            </p>
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                The comprehensive architectural guide for software engineers, AI researchers, and practitioners. Move beyond basic prompts and discover production-grade orchestration loops, memory strategies, multi-agent communication topologies, and security layers.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.amazon.com/dp/B0H5S3TN8N/" target="_blank" class="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition text-center text-lg">
+                    <i class="fab fa-amazon mr-2 text-xl"></i> Order on Amazon
+                </a>
+                <a href="#toc" class="inline-flex items-center justify-center bg-white hover:bg-slate-100 text-slate-700 font-semibold px-8 py-4 rounded-xl border border-slate-300 shadow-sm transition text-center">
+                    Explore Table of Contents
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 text-center mb-6">Building AI That Works</h2>
+            <p class="text-lg text-slate-600 text-center leading-relaxed mb-12 max-w-3xl mx-auto">
+                Building reliable AI systems requires concrete architectural principles. This book acts as a design manual, consolidating production-tested patterns to take your systems from single-shot prompts to robust, autonomous workflows.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-950 text-base mb-2">From Core Loops to Workflows</h3>
+                    <p class="text-sm text-slate-600">Master the fundamental mechanics of cognitive reasoning loops, prompt engineering guidelines, and structured system workflows.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-950 text-base mb-2">Multi-Agent Systems & Memory</h3>
+                    <p class="text-sm text-slate-600">Learn how to orchestrate collaboration between isolated agent nodes and leverage state persistence and RAG effectively.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-950 text-base mb-2">Production Safety & Controls</h3>
+                    <p class="text-sm text-slate-600">Implement deterministic guardrails, human-in-the-loop approval gating, and standard monitoring frameworks to protect deployments.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-950 text-base mb-2">Practical Case Studies</h3>
+                    <p class="text-sm text-slate-600">Walk through modular architecture patterns for building customer support systems, coding assistants, voice nodes, and document processors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="toc" class="py-16 md:py-24 bg-slate-50 border-t border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-3">Complete Table of Contents</h2>
+                <p class="text-sm text-slate-500">Explore the comprehensive roadmap laid out inside the book.</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between">
+                    <h3 class="font-bold text-base text-slate-900">Preface</h3>
+                    <span class="text-xs font-mono text-slate-400">Page 8</span>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">1. From LLMs to Agents</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 9</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>1.1. What is a Large Language Model?</span><span class="font-mono text-xs text-slate-400">p. 9</span></li>
+                        <li class="flex justify-between"><span>1.2. The Importance of the Context Window.</span><span class="font-mono text-xs text-slate-400">p. 9</span></li>
+                        <li class="flex justify-between"><span>1.3. Is Prompting Enough for Complex Works?</span><span class="font-mono text-xs text-slate-400">p. 9</span></li>
+                        <li class="flex justify-between"><span>1.4. The Shift from single-shot prompting to agentic workflows.</span><span class="font-mono text-xs text-slate-400">p. 9</span></li>
+                        <li class="flex justify-between"><span>1.5. Key Pitfalls in Large Language Model (LLM) Integration.</span><span class="font-mono text-xs text-slate-400">p. 10</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">2. The Agent Concept</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 10</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>2.1. What is an AI agent?</span><span class="font-mono text-xs text-slate-400">p. 10</span></li>
+                        <li class="flex justify-between"><span>2.2. Components of an AI Agent.</span><span class="font-mono text-xs text-slate-400">p. 11</span></li>
+                        <li class="flex justify-between"><span>2.3. How does an Agent Work?</span><span class="font-mono text-xs text-slate-400">p. 12</span></li>
+                        <li class="flex justify-between"><span>2.4. Deep Research Agents</span><span class="font-mono text-xs text-slate-400">p. 13</span></li>
+                        <li class="flex justify-between"><span>2.5. Key Pitfalls in Agentic System Design.</span><span class="font-mono text-xs text-slate-400">p. 15</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">3. Crafting Prompts for Agents</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 16</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>3.1. Core Principles of Instruction Writing for Agents</span><span class="font-mono text-xs text-slate-400">p. 16</span></li>
+                        <li class="flex justify-between"><span>3.2. Short Examples of System Prompts</span><span class="font-mono text-xs text-slate-400">p. 17</span></li>
+                        <li class="flex justify-between"><span>3.3. Good vs. Bad Agent Instructions.</span><span class="font-mono text-xs text-slate-400">p. 18</span></li>
+                        <li class="flex justify-between"><span>3.4. Key Pitfalls in System Prompting and Configuration</span><span class="font-mono text-xs text-slate-400">p. 18</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">4. Blueprints for Single-Agent Design</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 19</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>4.1. An 8-Step Design Roadmap for Single Agents</span><span class="font-mono text-xs text-slate-400">p. 19</span></li>
+                        <li class="flex justify-between"><span>4.2. Core Components</span><span class="font-mono text-xs text-slate-400">p. 22</span></li>
+                        <li class="flex justify-between"><span>4.3. How To Test and Iterate on a Single Agent</span><span class="font-mono text-xs text-slate-400">p. 24</span></li>
+                        <li class="flex justify-between"><span>4.4. Key Pitfalls in Architecture and Planning</span><span class="font-mono text-xs text-slate-400">p. 25</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">5. Context and Memory: Providing Agents with Relevant Information</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 26</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>5.1. Context Engineering.</span><span class="font-mono text-xs text-slate-400">p. 26</span></li>
+                        <li class="flex justify-between"><span>5.2. A Brief Introduction to Retrieval-Augmented Generation (RAG)</span><span class="font-mono text-xs text-slate-400">p. 26</span></li>
+                        <li class="flex justify-between"><span>5.3. Key Pitfalls in Context and Knowledge Retrieval (RAG)</span><span class="font-mono text-xs text-slate-400">p. 29</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">6. Agent Workflows: From Tasks to Flows</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 31</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>6.1. One-Shot Tasks versus Workflows</span><span class="font-mono text-xs text-slate-400">p. 31</span></li>
+                        <li class="flex justify-between"><span>6.2. Common Workflow Patterns.</span><span class="font-mono text-xs text-slate-400">p. 31</span></li>
+                        <li class="flex justify-between"><span>6.3. Key Pitfalls in Workflow Design.</span><span class="font-mono text-xs text-slate-400">p. 33</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">7. Core Patterns for Agent-Based Systems</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 34</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>7.1. Pattern Categories.</span><span class="font-mono text-xs text-slate-400">p. 34</span></li>
+                        <li class="flex justify-between"><span>7.2. Core Structural Patterns</span><span class="font-mono text-xs text-slate-400">p. 34</span></li>
+                        <li class="flex justify-between"><span>7.3. Key Pitfalls in Pattern Selection.</span><span class="font-mono text-xs text-slate-400">p. 37</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">8. Designing Multi-Agent Systems</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 39</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>8.1. When Single Agents are not Enough</span><span class="font-mono text-xs text-slate-400">p. 39</span></li>
+                        <li class="flex justify-between"><span>8.2. Communication Between Agents</span><span class="font-mono text-xs text-slate-400">p. 39</span></li>
+                        <li class="flex justify-between"><span>8.3. Key Pitfalls in Multi-Agent Systems.</span><span class="font-mono text-xs text-slate-400">p. 42</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">9. Monitoring and Improvement</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 43</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>9.1. What Should Be Evaluated?</span><span class="font-mono text-xs text-slate-400">p. 43</span></li>
+                        <li class="flex justify-between"><span>9.2. Practical Feedback Mechanism for Improvement</span><span class="font-mono text-xs text-slate-400">p. 44</span></li>
+                        <li class="flex justify-between"><span>9.3. Key Pitfalls in Evaluation and Monitoring</span><span class="font-mono text-xs text-slate-400">p. 44</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">10. Safety, Reliability, and Boundaries</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 45</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>10.1. Common risks.</span><span class="font-mono text-xs text-slate-400">p. 45</span></li>
+                        <li class="flex justify-between"><span>10.2. Guardrails and Control Layers.</span><span class="font-mono text-xs text-slate-400">p. 45</span></li>
+                        <li class="flex justify-between"><span>10.3. Human-in-the-Loop Approval</span><span class="font-mono text-xs text-slate-400">p. 45</span></li>
+                        <li class="flex justify-between"><span>10.4. Ethical Safety</span><span class="font-mono text-xs text-slate-400">p. 47</span></li>
+                        <li class="flex justify-between"><span>10.5. Key Pitfalls in Safety and Security</span><span class="font-mono text-xs text-slate-400">p. 48</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">11. Case Studies</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 49</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>11.1. Customer Support Assistant.</span><span class="font-mono text-xs text-slate-400">p. 49</span></li>
+                        <li class="flex justify-between"><span>11.2. Developer assistant.</span><span class="font-mono text-xs text-slate-400">p. 49</span></li>
+                        <li class="flex justify-between"><span>11.3. Document Analysis Assistant</span><span class="font-mono text-xs text-slate-400">p. 50</span></li>
+                        <li class="flex justify-between"><span>11.4. Voice or Phone Agent.</span><span class="font-mono text-xs text-slate-400">p. 50</span></li>
+                        <li class="flex justify-between"><span>11.5. Key Pitfalls in Application and Scaling.</span><span class="font-mono text-xs text-slate-400">p. 51</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between">
+                    <h3 class="font-bold text-base text-slate-900">12. Exercises for Designing Agent Systems</h3>
+                    <span class="text-xs font-mono text-slate-400">Page 52</span>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-baseline justify-between border-b border-slate-100 pb-2 mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">13. Further Reading and Tools</h3>
+                        <span class="text-xs font-mono text-slate-400">Page 54</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-none pl-1">
+                        <li class="flex justify-between"><span>13.1. Key Articles and Handbooks.</span><span class="font-mono text-xs text-slate-400">p. 54</span></li>
+                        <li class="flex justify-between"><span>13.2. Libraries and Tools</span><span class="font-mono text-xs text-slate-400">p. 55</span></li>
+                        <li class="flex justify-between"><span>13.3. Suggested Learning Path.</span><span class="font-mono text-xs text-slate-400">p. 56</span></li>
+                    </ul>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 text-center text-xs font-semibold text-slate-500 pt-4">
+                    <div class="bg-white p-3 border border-slate-200 rounded-lg shadow-sm">Glossary (p. 57)</div>
+                    <div class="bg-white p-3 border border-slate-200 rounded-lg shadow-sm">Resources (p. 62)</div>
+                    <div class="bg-white p-3 border border-slate-200 rounded-lg shadow-sm">Index (p. 63)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="author" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-l-4 border-blue-600 pl-6 md:pl-10">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Meet the Author</h2>
+            <p class="text-slate-600 text-base leading-relaxed mb-6">
+                <strong>Ruken Zilan</strong> is an AI researcher, educator, and physicist with over 20 years of experience spanning academia and industry. She holds degrees in Physics from Gazi University and METU, and an M.Sc. in Computer Engineering from TOBB ETU. A former CISCO CA research fellow, she carried out PhD-level studies at Universitat Politècnica de Catalunya (UPC Barcelona Tech) and the Barcelona Supercomputing Center (BSC). Throughout her career, Ruken has driven R&D across major technoparks including METU Technopolis, ITU ARI Technopark, and Istanbul Technopark. Currently, she shapes the future of AI education by designing and teaching university-level Prompt Engineering curricula while delivering industry-wide workshops.
+            </p>
+            <div class="flex space-x-6 text-slate-500 font-medium">
+                <a href="https://linkedin.com/in/rukenzilan" target="_blank" class="hover:text-blue-700 transition flex items-center gap-2">
+                    <i class="fab fa-linkedin text-xl"></i> LinkedIn
+                </a>
+                <a href="https://scholar.google.com/scholar?q=Ruken+Zilan" target="_blank" class="hover:text-blue-600 transition flex items-center gap-2">
+                    <i class="fas fa-graduation-cap text-xl"></i> Google Scholar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-slate-900 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4">Start Engineering Production AI Architecture</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto text-sm sm:text-base">Get your digital or print edition copy of "Designing Agents Handbook" directly on Amazon.</p>
+            <a href="https://www.amazon.com/dp/B0H5S3TN8N/" target="_blank" class="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition text-lg">
+                <i class="fab fa-amazon mr-2 text-xl"></i> Order From Amazon Now
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-500 text-xs py-8 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Designing Agents Handbook. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
