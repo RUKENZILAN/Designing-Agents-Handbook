@@ -40,7 +40,7 @@ A former CISCO CA research fellow, she carried out PhD-level studies at Universi
 
 🌐 **Professional Profiles:**
 - [LinkedIn](https://linkedin.com/in/rukenzilan)
-- [Google Scholar](https://scholar.google.com/scholar?q=Ruken+Zilan)
+- [Google Scholar](https://scholar.google.com/citations?user=wHGzTj0AAAAJ&hl=en)
 
 ---
 
