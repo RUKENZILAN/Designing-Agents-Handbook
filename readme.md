@@ -2,7 +2,7 @@
 
 Welcome to the official repository for the **Designing Agents Handbook** landing page. This clean, typography-focused website serves as the informational hub and architectural roadmap for software engineers, AI researchers, and practitioners migrating from single-shot prompting to production-grade agentic workflows.
 
-🔗 **Live Website:** https://designingagentshandbook.vercel.app/
+🔗 **Live Website:** [https://designingagentshandbook.vercel.app/](https://designing-agents-handbook.vercel.app/)
 
 ---
 
